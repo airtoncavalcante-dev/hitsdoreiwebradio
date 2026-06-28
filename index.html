@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hits do Rei WebRádio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1b2a;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    .banner, .container {
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      margin: 0 auto;
+    }
+
+    .banner {
+      margin-top: 20px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .container {
+      background-color: #1b263b;
+      padding: 20px 30px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .topo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topo img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      border: 3px solid #d3d3d3;
+      box-shadow: 0 0 10px #d3d3d3;
+    }
+
+    .info h1 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #ffffff;
+    }
+
+    .info p {
+      margin: 4px 0;
+      font-size: 1em;
+      color: #ffffff;
+    }
+
+    .info .sub {
+      font-size: 0.9em;
+      color: #ffffff;
+    }
+
+    .player {
+      margin-top: 20px;
+      background-color: #415a77;
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+    }
+
+    .extra-info {
+      margin-top: 20px;
+      background-color: #1b263b;
+      border-radius: 8px;
+      padding: 15px;
+      color: #ffffff;
+    }
+
+    .extra-info h2 {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #ffffff;
+    }
+
+    .extra-info p {
+      margin: 5px 0;
+      font-size: 0.95em;
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGJEKEhLFJ8cVnDy4LLTdI7r9ZeLrkuRNlc8KpO-fAGAT07fk7N9UZXDS3g_vCfln6FLD3qrW8SQ9kEGz9dPnX86k3u-ONBNJiIA8vWmj2CKaPqX0Ueu_Z2ejmNmHCp76nmv_e-j_eklL1rmnxZA5e4_iG6XRbvAoOYFpvYupWz-D9w6QhSsMXViSyTbgE/s320/Screenshot%202026-06-20%20095723-Photoroom.png" alt="Banner Julio Iglesias WebRádio"/>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <div class="topo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpZ7HpczqjjQkIxqqWT4pNQ-lED6isAItc-Kv1V3GNmJk_uP7r7I0x6abu6y7FvPumpz8TyqD0xhL35hq37rKaorkCvCkJIEgP6vvsxUvy9QM96rkrhEyJU33YGolnu0BQqhwlcsO-TmbB5lLBDOLBBR21N-Z5OwM-3CJmEyIlVeBeOxzck6Z76yoNcH0g/s320/Web%20Radio%20Hits%20do%20Rei%20Logo%20500x500.png" alt="Logo Julio Iglesias WebRádio"/>
+      <div class="info">
+        <h1>Hits do Rei WebRádio</h1>
+        <p>Itau - RN</p>
+        <p class="sub">A Rádio do Rei</p>
+      </div>
+    </div>
+
+    <div class="player">
+      <audio id="playerAudio" controls autoplay>
+        <source src="https://stream.zeno.fm/erbpkq1cz55vv" type="audio/mpeg"/>
+        Seu navegador não suporta o player de áudio.
+      </audio>
+    </div>
+
+    <div class="extra-info">
+      <p><strong>No ar:</strong> Músicas do Rei</p>
+      <p><strong>Horário:</strong> 24h</p>
+
+      <h2>Informações da rádio</h2>
+      <p><strong>Segmentos:</strong> Romântica, Classica, MPB</p>
+      <p><strong>Cidade:</strong> Itau</p>
+      <p><strong>Região:</strong> Oeste Potiguar</p>
+      <p><strong>Estado:</strong> Rio Grande do Norte</p>
+      <p><strong>País:</strong> Brasil</p>
+    </div>
+
+    <footer>
+      Copyright Cavalcante tecnology
+    </footer>
+  </div>
+
+</body>
+</html>
